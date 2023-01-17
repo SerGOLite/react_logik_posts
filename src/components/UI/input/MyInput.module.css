@@ -1,0 +1,42 @@
+:root {
+    --primary-light: #8abdff;
+    --primary: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
+}
+
+/* .myInput {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 5px 0;
+    border: 1px solid teal;
+} */
+
+.myInput {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    padding-left: 1.4rem;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+    background: none;
+    color: var(--greyDark);
+    margin: 20px 0;
+}
+
+
+
+.myInput::placeholder {
+    color: var(--greyLight-3);
+    font-family: "Montserrat", sans-serif;
+}
+
+.myInput:focus {
+    outline: none;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+}

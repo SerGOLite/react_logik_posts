@@ -1,0 +1,64 @@
+:root {
+    --primary-light: #8abdff;
+    --primary: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
+}
+
+/* .myBtn {
+    padding: 5px 15px;
+    color: teal;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid teal;
+    cursor: pointer;
+} */
+
+
+.myBtn {
+    border-radius: 8px;
+    line-height: 0;
+    padding: 30px 20px;
+    /* width: 400px;
+    height: 100px; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10 8px;
+    font-size: 16px;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    margin: 20px 0;
+
+}
+
+button {
+    border: 0;
+    outline: 0;
+    border-radius: 320px;
+    padding: 16px;
+    background-color: var(--greyLight-1);
+    /* text-shadow: 1px 1px 0 white; */
+    color: var(--greyDark);
+    box-shadow: -5px -5px 10px white, 5px 5px 10px #BABECC;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+button:hover {
+    box-shadow: -2px -2px 5px white, 2px 2px 5px #BABECC;
+    color: var(--primary);
+}
+
+button:active {
+    box-shadow: inset 2px 2px 2px #BABECC, inset -2px -2px 2px white;
+}
