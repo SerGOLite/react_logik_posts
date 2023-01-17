@@ -8,7 +8,6 @@ const PostForm = ({ create }) => {
     // Möglichkeit #1 Die Daten von Input zu bekommen 
     const addNewPost = (e) => {
         e.preventDefault()
-        // setPosts([...posts, { ...post, id: Date.now() }])
         const newPost = {
             ...post, id: Date.now()
         }
@@ -25,7 +24,7 @@ const PostForm = ({ create }) => {
                 type="text"
                 placeholder='Post Name' />
 
-            {/* Nicht kontrolierbare Component ...forwardRef()...*/}
+            {/* Nicht kontrolierbare Component mit forwardRef()...*/}
             <MyInput
                 value={post.body}
                 onChange={e => setPost({ ...post, body: e.target.value })}
